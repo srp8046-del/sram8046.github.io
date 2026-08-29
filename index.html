@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sheshram Prajapati | MIS Executive</title>
+
+<meta name="description"
+content="Sheshram Prajapati — MIS Executive with 8+ years of experience in MIS Reporting, Data Analysis and Workforce Management.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --red: #e4002b;
+    --red2: #ff1744;
+
+    --black: #050505;
+    --black2: #080808;
+    --dark: #0d0d0f;
+    --card: #111113;
+    --card2: #151518;
+
+    --white: #ffffff;
+    --text: #dddddf;
+    --muted: #96969d;
+
+    --border: rgba(255,255,255,.09);
+
+    --max: 1240px;
+}
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.container {
+    max-width: var(--max);
+    margin: auto;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+section {
+    padding: 110px 0;
+}
+
+.section-label {
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.section-title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1;
+    letter-spacing: -2.5px;
+}
+
+.section-subtitle {
+    color: var(--muted);
+    max-width: 620px;
+    margin-top: 18px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 76px;
+    z-index: 1000;
+
+    background: rgba(5,5,5,.78);
+    backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.nav-inner {
+    max-width: var(--max);
+    height: 100%;
+    margin: auto;
+    padding: 0 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: var(--red);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 13px;
+    color: #bdbdc2;
+    transition: .25s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.resume-btn {
+    padding: 11px 20px;
+    border-radius: 30px;
+    background: var(--red);
+    color: white !important;
+}
+
+.resume-btn:hover {
+    background: var(--red2);
+    transform: translateY(-2px);
+}
+
+.menu {
+    display: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+    padding-top: 150px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+    width: 700px;
+    height: 700px;
+
+    right: -300px;
+    top: 40px;
+
+    background: var(--red);
+    opacity: .10;
+    filter: blur(180px);
+
+    border-radius: 50%;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+    width: 400px;
+    height: 400px;
+
+    left: -250px;
+    bottom: -150px;
+
+    background: #9b001d;
+    opacity: .08;
+    filter: blur(160px);
+
+    border-radius: 50%;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 70px;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-small {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ff5272;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+
+    margin-bottom: 25px;
+}
+
+.hero-small::before {
+    content: "";
+
+    width: 8px;
+    height: 8px;
+
+    background: var(--red);
+    border-radius: 50%;
+
+    box-shadow: 0 0 15px var(--red);
+}
+
+.hero h1 {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(54px, 7vw, 92px);
+
+    line-height: .94;
+
+    letter-spacing: -5px;
+
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: var(--red);
+}
+
+.hero-role {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e9e9eb;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 680px;
+
+    color: var(--muted);
+
+    font-size: 16px;
+    line-height: 1.85;
+
+    margin-bottom: 34px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 23px;
+
+    border-radius: 40px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.btn-red {
+    background: var(--red);
+}
+
+.btn-red:hover {
+    background: var(--red2);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(228,0,43,.25);
+}
+
+.btn-outline {
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,.025);
+}
+
+.btn-outline:hover {
+    border-color: rgba(228,0,43,.5);
+    background: rgba(228,0,43,.08);
+    transform: translateY(-3px);
+}
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.profile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.profile-glow {
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    border-radius: 50%;
+
+    background: var(--red);
+    filter: blur(100px);
+
+    opacity: .17;
+}
+
+.profile-ring {
+    position: relative;
+    z-index: 2;
+
+    width: 390px;
+    height: 390px;
+
+    padding: 8px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            140deg,
+            var(--red),
+            transparent 48%,
+            #37000c
+        );
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    background: #151518;
+
+    border: 8px solid var(--black);
+}
+
+.profile-card {
+    position: absolute;
+    z-index: 5;
+
+    bottom: 5px;
+    left: 10px;
+
+    padding: 17px 20px;
+
+    border-radius: 18px;
+
+    background: rgba(17,17,19,.9);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid var(--border);
+
+    box-shadow: 0 20px 50px rgba(0,0,0,.45);
+}
+
+.profile-card strong {
+    display: block;
+
+    color: var(--red);
+
+    font-family: "Space Grotesk";
+    font-size: 25px;
+}
+
+.profile-card small {
+    color: #aaa;
+    font-size: 11px;
+}
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.stat {
+    padding: 32px 25px;
+    border-right: 1px solid var(--border);
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat-number {
+    font-family: "Space Grotesk";
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.stat-number span {
+    color: var(--red);
+}
+
+.stat p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    background: #080809;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 80px;
+
+    margin-top: 55px;
+}
+
+.about-big {
+    font-family: "Space Grotesk";
+
+    font-size: 40px;
+    line-height: 1.15;
+
+    letter-spacing: -1.5px;
+}
+
+.about-big span {
+    color: var(--red);
+}
+
+.about-text p {
+    color: var(--muted);
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.about-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.about-point {
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    padding: 18px;
+}
+
+.about-point strong {
+    display: block;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.about-point span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* =========================================================
+   EXPERIENCE
+========================================================= */
+
+.experience-list {
+    margin-top: 55px;
+
+    display: grid;
+    gap: 16px;
+}
+
+.experience-card {
+    display: grid;
+
+    grid-template-columns: 190px 1fr;
+
+    gap: 40px;
+
+    padding: 34px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 23px;
+
+    transition: .3s;
+}
+
+.experience-card:hover {
+    transform: translateX(5px);
+
+    border-color: rgba(228,0,43,.38);
+
+    background: #131316;
+}
+
+.experience-date {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    padding-top: 5px;
+}
+
+.experience-card h3 {
+    font-family: "Space Grotesk";
+
+    font-size: 24px;
+
+    margin-bottom: 4px;
+}
+
+.company {
+    color: #aaa;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+.experience-card p {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   BUSINESS EXPOSURE
+========================================================= */
+
+.exposure {
+    background: #080809;
+}
+
+.exposure-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 16px;
+}
+
+.exposure-card {
+    min-height: 230px;
+
+    padding: 30px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 22px;
+
+    transition: .3s;
+}
+
+.exposure-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(228,0,43,.4);
+}
+
+.exposure-number {
+    color: var(--red);
+
+    font-family: "Space Grotesk";
+
+    font-size: 13px;
+
+    margin-bottom: 50px;
+}
+
+.exposure-card h3 {
+    font-family: "Space Grotesk";
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+}
+
+.exposure-card p {
+    color: var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 12px;
+}
+
+.skill {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 21px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    transition: .25s;
+}
+
+.skill:hover {
+    background: #17171a;
+
+    border-color: rgba(228,0,43,.4);
+}
+
+.skill-name {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.skill-level {
+    color: var(--red);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.projects {
+    background: #080809;
+}
+
+.project-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+}
+
+.project {
+    min-height: 310px;
+
+    padding: 32px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 23px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: .3s;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(228,0,43,.4);
+}
+
+.project::after {
+    content: "";
+
+    position: absolute;
+
+    width: 170px;
+    height: 170px;
+
+    right: -70px;
+    bottom: -80px;
+
+    border-radius: 50%;
+
+    background: var(--red);
+
+    filter: blur(80px);
+
+    opacity: .08;
+}
+
+.project-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 70px;
+}
+
+.project-tag {
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    color: #ff5471;
+
+    background: rgba(228,0,43,.09);
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.project-arrow {
+    color: var(--red);
+
+    font-size: 23px;
+}
+
+.project h3 {
+    font-family: "Space Grotesk";
+
+    font-size: 26px;
+
+    margin-bottom: 12px;
+}
+
+.project p {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-card {
+    margin-top: 55px;
+
+    padding: 32px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 23px;
+}
+
+.education-card h3 {
+    font-family: "Space Grotesk";
+
+    font-size: 25px;
+
+    margin-bottom: 6px;
+}
+
+.education-card p {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+    padding-bottom: 70px;
+}
+
+.contact-box {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 75px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #190006,
+            #101012 55%,
+            #180006
+        );
+
+    border: 1px solid rgba(228,0,43,.25);
+}
+
+.contact-box::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    right: -100px;
+    top: -220px;
+
+    border-radius: 50%;
+
+    background: var(--red);
+
+    filter: blur(150px);
+
+    opacity: .12;
+}
+
+.contact-box h2 {
+    position: relative;
+
+    font-family: "Space Grotesk";
+
+    font-size: clamp(43px,6vw,76px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    max-width: 850px;
+
+    margin-bottom: 22px;
+}
+
+.contact-box h2 span {
+    color: var(--red);
+}
+
+.contact-box p {
+    position: relative;
+
+    color: #a3a3a8;
+
+    max-width: 600px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    position: relative;
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding: 30px 28px 40px;
+
+    border-top: 1px solid var(--border);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #666;
+
+    font-size: 11px;
+}
+
+footer strong {
+    color: white;
+}
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition: .7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:900px) {
+
+    .menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 72px;
+
+        left: 20px;
+        right: 20px;
+
+        padding: 22px;
+
+        background: #111114;
+
+        border: 1px solid var(--border);
+
+        border-radius: 18px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-small {
+        justify-content: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .profile {
+        margin-top: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat:nth-child(3),
+    .stat:nth-child(4) {
+        border-top: 1px solid var(--border);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .exposure-grid,
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px) {
+
+    section {
+        padding: 80px 0;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero {
+        padding-top: 125px;
+    }
+
+    .hero h1 {
+        font-size: 51px;
+        letter-spacing: -3px;
+    }
+
+    .hero-role {
+        font-size: 17px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .profile-ring {
+        width: 290px;
+        height: 290px;
+    }
+
+    .profile-card {
+        left: 4%;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat {
+        padding: 25px 14px;
+    }
+
+    .stat-number {
+        font-size: 31px;
+    }
+
+    .about-points,
+    .exposure-grid,
+    .skills-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        padding: 25px;
+    }
+
+    .project {
+        min-height: 285px;
+    }
+
+    .contact-box {
+        padding: 42px 25px;
+    }
+
+    .contact-box h2 {
+        letter-spacing: -2px;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ======================================================
+     NAVBAR
+====================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-inner">
+
+        <a href="#home" class="logo">
+            SHESHRAM<span>.</span>
+        </a>
+
+        <button class="menu" id="menu">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+            <li>
+                <a href="resume.pdf"
+                   target="_blank"
+                   class="resume-btn">
+                    Resume
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-grid">
+
+            <div class="reveal">
+
+                <div class="hero-small">
+                    MIS Executive · Data Analytics
+                </div>
+
+                <h1>
+                    Turning
+                    <span>data</span>
+                    into
+                    <span>decisions.</span>
+                </h1>
+
+                <div class="hero-role">
+                    MIS Executive | MIS Reporting | Data Analysis | WFM
+                </div>
+
+                <p class="hero-description">
+                    MIS professional with 8+ years of experience in
+                    MIS reporting, data analysis, workforce management,
+                    performance tracking and business reporting across
+                    BPO and Telecom operations.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#experience"
+                       class="btn btn-red">
+                        Explore Experience →
+                    </a>
+
+                    <a href="#contact"
+                       class="btn btn-outline">
+                        Let's Connect
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <div class="profile reveal">
+
+                <div class="profile-glow"></div>
+
+                <div class="profile-ring">
+
+                    <!--
+                    =================================================
+                    PROFILE PHOTO
+
+                    Replace the URL below with your GitHub RAW image.
+
+                    Example:
+
+                    https://raw.githubusercontent.com/
+                    YOUR_USERNAME/YOUR_REPO/main/profile.jpg
+
+                    =================================================
+                    -->
+
+                    <img
+                        id="profileImage"
+                        class="profile-image"
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=90"
+                        alt="Sheshram Prajapati"
+                    >
+
+                </div>
+
+                <div class="profile-card">
+
+                    <strong>8+ Years</strong>
+
+                    <small>
+                        MIS & Reporting Experience
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     STATS
+====================================================== -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat reveal">
+                <div class="stat-number">
+                    8<span>+</span>
+                </div>
+
+                <p>
+                    Years Experience
+                </p>
+            </div>
+
+
+            <div class="stat reveal">
+                <div class="stat-number">
+                    5<span>+</span>
+                </div>
+
+                <p>
+                    MIS Team Members
+                </p>
+            </div>
+
+
+            <div class="stat reveal">
+                <div class="stat-number">
+                    3
+                </div>
+
+                <p>
+                    Major Organizations
+                </p>
+            </div>
+
+
+            <div class="stat reveal">
+                <div class="stat-number">
+                    3
+                </div>
+
+                <p>
+                    Business Domains
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     ABOUT
+====================================================== -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            About Me
+        </div>
+
+        <h2 class="section-title reveal">
+            More than<br>
+            just numbers.
+        </h2>
+
+
+        <div class="about-grid">
+
+            <div class="about-big reveal">
+
+                I make complex
+                <span>data simple.</span>
+
+            </div>
+
+
+            <div class="about-text reveal">
+
+                <p>
+                    I am an experienced MIS professional with
+                    8+ years of experience in MIS reporting,
+                    data analysis, workforce management,
+                    performance tracking and business reporting.
+                </p>
+
+                <p>
+                    I work extensively with large customer datasets,
+                    daily/weekly/monthly MIS, Excel dashboards,
+                    KPI reports, management reports and
+                    performance analysis.
+                </p>
+
+                <p>
+                    My experience covers BPO and Telecom operations
+                    including Airtel DTH, Broadband, Prepaid,
+                    Postpaid, Retention, CPE Recovery,
+                    New Acquisition, VAS and Installation processes.
+                </p>
+
+
+                <div class="about-points">
+
+                    <div class="about-point">
+
+                        <strong>
+                            MIS Reporting
+                        </strong>
+
+                        <span>
+                            Daily · Weekly · Monthly
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-point">
+
+                        <strong>
+                            Data Analysis
+                        </strong>
+
+                        <span>
+                            KPI · Trend · Performance
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-point">
+
+                        <strong>
+                            Automation
+                        </strong>
+
+                        <span>
+                            Advanced Excel · VBA
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-point">
+
+                        <strong>
+                            Workforce Management
+                        </strong>
+
+                        <span>
+                            WFM · Productivity · AHT
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     EXPERIENCE
+====================================================== -->
+
+<section id="experience">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Career
+        </div>
+
+        <h2 class="section-title reveal">
+            Experience
+        </h2>
+
+        <p class="section-subtitle reveal">
+            8+ years of experience across MIS reporting,
+            business analytics, WFM and Telecom operations.
+        </p>
+
+
+        <div class="experience-list">
+
+
+            <!-- LEeway -->
+
+            <div class="experience-card reveal">
+
+                <div class="experience-date">
+                    NOV 2020 — PRESENT
+                </div>
+
+                <div>
+
+                    <h3>
+                        Senior MIS Executive
+                    </h3>
+
+                    <div class="company">
+                        Leeway International Pvt. Ltd.
+                    </div>
+
+                    <p>
+                        Manage MIS and business reporting for multiple
+                        Airtel Telecom and DTH processes. Lead a team
+                        of 5 MIS Executives and manage daily MIS
+                        requirements, large customer datasets,
+                        dashboards, KPIs, WFM and operational analysis.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIGMA -->
+
+            <div class="experience-card reveal">
+
+                <div class="experience-date">
+                    AUG 2018 — NOV 2020
+                </div>
+
+                <div>
+
+                    <h3>
+                        MIS Executive / Field Coordinator
+                    </h3>
+
+                    <div class="company">
+                        Sigma Outsourcing Pvt. Ltd.
+                    </div>
+
+                    <p>
+                        Managed MIS and field operations for Airtel
+                        Broadband Installation in Delhi NCR,
+                        including lead tracking, installation,
+                        closure, productivity reporting and
+                        coordination with field and technical teams.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LEEWAY BPO -->
+
+            <div class="experience-card reveal">
+
+                <div class="experience-date">
+                    AUG 2017 — AUG 2018
+                </div>
+
+                <div>
+
+                    <h3>
+                        MIS Executive
+                    </h3>
+
+                    <div class="company">
+                        Leeway BPO
+                    </div>
+
+                    <p>
+                        Managed MIS reporting for Airtel Broadband
+                        lead generation operations across India.
+                        Prepared daily, weekly and monthly reports,
+                        monitored campaign KPIs and supported
+                        operations teams with performance tracking.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     BUSINESS EXPOSURE
+====================================================== -->
+
+<section class="exposure">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Business Exposure
+        </div>
+
+        <h2 class="section-title reveal">
+            Domains I know.
+        </h2>
+
+
+        <div class="exposure-grid">
+
+
+            <div class="exposure-card reveal">
+
+                <div class="exposure-number">
+                    01
+                </div>
+
+                <h3>
+                    Airtel DTH
+                </h3>
+
+                <p>
+                    DTH Retention · CPE Recovery ·
+                    New Acquisition · VAS
+                </p>
+
+            </div>
+
+
+            <div class="exposure-card reveal">
+
+                <div class="exposure-number">
+                    02
+                </div>
+
+                <h3>
+                    Airtel Telecom
+                </h3>
+
+                <p>
+                    Postpaid New Acquisition ·
+                    Prepaid New Acquisition
+                </p>
+
+            </div>
+
+
+            <div class="exposure-card reveal">
+
+                <div class="exposure-number">
+                    03
+                </div>
+
+                <h3>
+                    Airtel Broadband
+                </h3>
+
+                <p>
+                    Pan India Lead Generation · Delhi NCR
+                    Installation · Lead-to-Installation Tracking
+                    · Field Operations · Technical Coordination
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     SKILLS
+====================================================== -->
+
+<section id="skills">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Toolkit
+        </div>
+
+        <h2 class="section-title reveal">
+            Skills & Tools
+        </h2>
+
+        <p class="section-subtitle reveal">
+            Tools and capabilities used for reporting,
+            analysis, automation and business performance tracking.
+        </p>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    Advanced Excel
+                </span>
+
+                <span class="skill-level">
+                    Advanced
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    Pivot Tables / Charts
+                </span>
+
+                <span class="skill-level">
+                    Advanced
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    XLOOKUP / VLOOKUP
+                </span>
+
+                <span class="skill-level">
+                    Advanced
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    INDEX-MATCH
+                </span>
+
+                <span class="skill-level">
+                    Advanced
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    Power Query
+                </span>
+
+                <span class="skill-level">
+                    Advanced
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    Excel Dashboards
+                </span>
+
+                <span class="skill-level">
+                    Advanced
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    Basic SQL
+                </span>
+
+                <span class="skill-level">
+                    Working
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    Power BI
+                </span>
+
+                <span class="skill-level">
+                    Learning
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    Python / Pandas
+                </span>
+
+                <span class="skill-level">
+                    Learning
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    WFM Reporting
+                </span>
+
+                <span class="skill-level">
+                    Advanced
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    KPI Analysis
+                </span>
+
+                <span class="skill-level">
+                    Advanced
+                </span>
+            </div>
+
+
+            <div class="skill reveal">
+                <span class="skill-name">
+                    Root Cause Analysis
+                </span>
+
+                <span class="skill-level">
+                    Advanced
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     PROJECTS
+====================================================== -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Selected Work
+        </div>
+
+        <h2 class="section-title reveal">
+            What I build.
+        </h2>
+
+
+        <div class="project-grid">
+
+
+            <div class="project reveal">
+
+                <div class="project-top">
+
+                    <span class="project-tag">
+                        EXCEL
+                    </span>
+
+                    <span class="project-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3>
+                    MIS Performance Dashboard
+                </h3>
+
+                <p>
+                    Excel-based dashboards for sales, revenue,
+                    productivity, WFM, KPIs and operational
+                    performance tracking.
+                </p>
+
+            </div>
+
+
+            <div class="project reveal">
+
+                <div class="project-top">
+
+                    <span class="project-tag">
+                        WFM
+                    </span>
+
+                    <span class="project-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3>
+                    Workforce Performance Reporting
+                </h3>
+
+                <p>
+                    Reporting around attendance, login hours,
+                    AHT, productivity, occupancy, utilization,
+                    calls handled and target achievement.
+                </p>
+
+            </div>
+
+
+            <div class="project reveal">
+
+                <div class="project-top">
+
+                    <span class="project-tag">
+                        ANALYTICS
+                    </span>
+
+                    <span class="project-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3>
+                    KPI & Revenue Analysis
+                </h3>
+
+                <p>
+                    Analysis of leads, attempts, connects,
+                    conversions, sales, retention, recovery,
+                    revenue and achievement.
+                </p>
+
+            </div>
+
+
+            <div class="project reveal">
+
+                <div class="project-top">
+
+                    <span class="project-tag">
+                        AUTOMATION
+                    </span>
+
+                    <span class="project-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3>
+                    Automated MIS Reporting
+                </h3>
+
+                <p>
+                    Recurring reporting workflows using
+                    Advanced Excel and reporting techniques
+                    to reduce manual effort and improve accuracy.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     EDUCATION
+====================================================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Education
+        </div>
+
+        <h2 class="section-title reveal">
+            Education
+        </h2>
+
+
+        <div class="education-card reveal">
+
+            <h3>
+                Bachelor of Arts (B.A.)
+            </h3>
+
+            <p>
+                Dr. Ram Manohar Lohia Avadh University, Ayodhya
+            </p>
+
+            <p>
+                2022
+            </p>
+
+            <br>
+
+            <p>
+                12th — UP Board · 2017
+            </p>
+
+            <p>
+                10th — UP Board · 2015
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     CONTACT
+====================================================== -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact-box reveal">
+
+            <h2>
+                Let's create something
+                <span>meaningful.</span>
+            </h2>
+
+            <p>
+                Open to MIS, Reporting, Data Analytics,
+                WFM and related opportunities in Delhi NCR.
+            </p>
+
+
+            <div class="contact-buttons">
+
+                <a
+                    href="mailto:srp8046@gmail.com"
+                    class="btn btn-red"
+                >
+                    Email Me →
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/Sheshram-prajapati"
+                    target="_blank"
+                    class="btn btn-outline"
+                >
+                    LinkedIn
+                </a>
+
+
+                <!-- Replace with your GitHub -->
+
+                <a
+                    href="https://github.com/"
+                    target="_blank"
+                    class="btn btn-outline"
+                >
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div>
+        © 2026 <strong>Sheshram Prajapati</strong>
+    </div>
+
+    <div>
+        MIS · Data Analytics · Reporting · WFM
+    </div>
+
+</footer>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script>
+
+/* ==========================================
+   MOBILE MENU
+========================================== */
+
+const menu = document.getElementById("menu");
+const navLinks = document.getElementById("navLinks");
+
+menu.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+});
+
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+
+/* ==========================================
+   SCROLL ANIMATION
+========================================== */
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.12
+    }
+);
+
+
+document.querySelectorAll(".reveal").forEach(element => {
+
+    observer.observe(element);
+
+});
+
+
+/* ==========================================
+   PROFILE IMAGE
+==========================================
+
+   CHANGE ONLY THIS URL.
+
+   GitHub RAW example:
+
+   https://raw.githubusercontent.com/
+   USERNAME/REPOSITORY/main/profile.jpg
+
+========================================== */
+
+const PROFILE_IMAGE =
+"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=90";
+
+
+document.getElementById("profileImage").src = PROFILE_IMAGE;
+
+</script>
+
+</body>
+</html>
