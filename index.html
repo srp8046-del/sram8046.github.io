@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,6 @@
 
 <title>Sheshram Prajapati | MIS Executive</title>
 
-<meta name="description"
-content="Sheshram Prajapati — MIS Executive with 8+ years of experience in MIS Reporting, Data Analysis and Workforce Management.">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -16,1164 +14,905 @@ content="Sheshram Prajapati — MIS Executive with 8+ years of experience in MIS
 
 <style>
 
-/* =========================================================
-   ROOT
-========================================================= */
-
-:root {
-    --red: #e4002b;
-    --red2: #ff1744;
-
-    --black: #050505;
-    --black2: #080808;
-    --dark: #0d0d0f;
-    --card: #111113;
-    --card2: #151518;
-
-    --white: #ffffff;
-    --text: #dddddf;
-    --muted: #96969d;
-
-    --border: rgba(255,255,255,.09);
-
-    --max: 1240px;
-}
-
-/* =========================================================
-   RESET
-========================================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+:root{
+    --red:#e4002b;
+    --red-light:#ff1744;
+    --black:#050505;
+    --dark:#0b0b0d;
+    --card:#111113;
+    --card-hover:#161619;
+    --white:#fff;
+    --text:#dddde1;
+    --muted:#929299;
+    --border:rgba(255,255,255,.09);
+    --max:1240px;
 }
 
-body {
-    font-family: "Inter", sans-serif;
-    background: var(--black);
-    color: var(--white);
-    overflow-x: hidden;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+html{
+    scroll-behavior:smooth;
 }
 
-button {
-    font-family: inherit;
+body{
+    background:var(--black);
+    color:var(--white);
+    font-family:Inter,sans-serif;
+    overflow-x:hidden;
 }
 
-/* =========================================================
-   GLOBAL
-========================================================= */
-
-.container {
-    max-width: var(--max);
-    margin: auto;
-    padding-left: 28px;
-    padding-right: 28px;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
-section {
-    padding: 110px 0;
+.container{
+    max-width:var(--max);
+    margin:auto;
+    padding:0 28px;
 }
 
-.section-label {
-    color: var(--red);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 14px;
+section{
+    padding:105px 0;
 }
 
-.section-title {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: clamp(42px, 5vw, 68px);
-    line-height: 1;
-    letter-spacing: -2.5px;
+.section-label{
+    color:var(--red);
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:14px;
 }
 
-.section-subtitle {
-    color: var(--muted);
-    max-width: 620px;
-    margin-top: 18px;
-    line-height: 1.8;
+.section-title{
+    font-family:"Space Grotesk",sans-serif;
+    font-size:clamp(42px,5vw,68px);
+    line-height:1;
+    letter-spacing:-3px;
 }
-
-/* =========================================================
-   NAVBAR
-========================================================= */
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 76px;
-    z-index: 1000;
-
-    background: rgba(5,5,5,.78);
-    backdrop-filter: blur(18px);
-
-    border-bottom: 1px solid rgba(255,255,255,.06);
+.section-subtitle{
+    color:var(--muted);
+    max-width:650px;
+    line-height:1.8;
+    margin-top:18px;
 }
 
-.nav-inner {
-    max-width: var(--max);
-    height: 100%;
-    margin: auto;
-    padding: 0 28px;
+/* ================= NAVBAR ================= */
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:76px;
+    z-index:1000;
+    background:rgba(5,5,5,.82);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.06);
 }
 
-.logo {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -1px;
+.nav-inner{
+    max-width:var(--max);
+    height:100%;
+    margin:auto;
+    padding:0 28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.logo span {
-    color: var(--red);
+.logo{
+    font-family:"Space Grotesk";
+    font-size:24px;
+    font-weight:700;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    list-style: none;
+.logo span{
+    color:var(--red);
 }
 
-.nav-links a {
-    font-size: 13px;
-    color: #bdbdc2;
-    transition: .25s;
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    list-style:none;
 }
 
-.nav-links a:hover {
-    color: white;
+.nav-links a{
+    color:#aaa;
+    font-size:13px;
+    transition:.25s;
 }
 
-.resume-btn {
-    padding: 11px 20px;
-    border-radius: 30px;
-    background: var(--red);
-    color: white !important;
+.nav-links a:hover{
+    color:white;
 }
 
-.resume-btn:hover {
-    background: var(--red2);
-    transform: translateY(-2px);
+.resume-btn{
+    background:var(--red);
+    color:white!important;
+    padding:11px 20px;
+    border-radius:30px;
 }
 
-.menu {
-    display: none;
-    border: none;
-    background: transparent;
-    color: white;
-    font-size: 26px;
-    cursor: pointer;
+.resume-btn:hover{
+    background:var(--red-light);
+    transform:translateY(-2px);
 }
-
-/* =========================================================
-   HERO
-========================================================= */
 
-.hero {
-    min-height: 100vh;
-    padding-top: 150px;
-
-    position: relative;
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
+.menu{
+    display:none;
+    border:0;
+    background:none;
+    color:white;
+    font-size:25px;
 }
-
-.hero::before {
-    content: "";
 
-    position: absolute;
-    width: 700px;
-    height: 700px;
+/* ================= HERO ================= */
 
-    right: -300px;
-    top: 40px;
-
-    background: var(--red);
-    opacity: .10;
-    filter: blur(180px);
-
-    border-radius: 50%;
+.hero{
+    min-height:100vh;
+    padding-top:150px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
 }
-
-.hero::after {
-    content: "";
-
-    position: absolute;
-    width: 400px;
-    height: 400px;
-
-    left: -250px;
-    bottom: -150px;
-
-    background: #9b001d;
-    opacity: .08;
-    filter: blur(160px);
 
-    border-radius: 50%;
+.hero:before{
+    content:"";
+    position:absolute;
+    width:650px;
+    height:650px;
+    right:-280px;
+    top:40px;
+    border-radius:50%;
+    background:var(--red);
+    opacity:.11;
+    filter:blur(170px);
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    gap: 70px;
-    align-items: center;
-
-    position: relative;
-    z-index: 2;
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:70px;
+    align-items:center;
+    position:relative;
+    z-index:2;
 }
-
-.hero-small {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    color: #ff5272;
 
-    font-size: 12px;
-    font-weight: 700;
-
-    text-transform: uppercase;
-    letter-spacing: 1.8px;
-
-    margin-bottom: 25px;
+.hero-small{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#ff5472;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+    margin-bottom:25px;
 }
-
-.hero-small::before {
-    content: "";
 
-    width: 8px;
-    height: 8px;
-
-    background: var(--red);
-    border-radius: 50%;
-
-    box-shadow: 0 0 15px var(--red);
+.hero-small:before{
+    content:"";
+    width:8px;
+    height:8px;
+    background:var(--red);
+    border-radius:50%;
+    box-shadow:0 0 15px var(--red);
 }
-
-.hero h1 {
-    font-family: "Space Grotesk", sans-serif;
-
-    font-size: clamp(54px, 7vw, 92px);
-
-    line-height: .94;
-
-    letter-spacing: -5px;
 
-    margin-bottom: 28px;
+.hero h1{
+    font-family:"Space Grotesk";
+    font-size:clamp(54px,7vw,92px);
+    line-height:.94;
+    letter-spacing:-5px;
+    margin-bottom:28px;
 }
 
-.hero h1 span {
-    color: var(--red);
+.hero h1 span{
+    color:var(--red);
 }
 
-.hero-role {
-    font-size: 20px;
-    font-weight: 600;
-    color: #e9e9eb;
-    margin-bottom: 20px;
+.hero-role{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:20px;
 }
 
-.hero-description {
-    max-width: 680px;
-
-    color: var(--muted);
-
-    font-size: 16px;
-    line-height: 1.85;
-
-    margin-bottom: 34px;
+.hero-description{
+    max-width:680px;
+    color:var(--muted);
+    font-size:16px;
+    line-height:1.85;
+    margin-bottom:34px;
 }
 
-.hero-buttons {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
+.hero-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
 }
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 14px 23px;
-
-    border-radius: 40px;
 
-    font-size: 13px;
-    font-weight: 700;
-
-    transition: .3s;
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 23px;
+    border-radius:40px;
+    font-size:13px;
+    font-weight:700;
+    transition:.3s;
 }
 
-.btn-red {
-    background: var(--red);
+.btn-red{
+    background:var(--red);
 }
 
-.btn-red:hover {
-    background: var(--red2);
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(228,0,43,.25);
+.btn-red:hover{
+    background:var(--red-light);
+    transform:translateY(-3px);
+    box-shadow:0 15px 35px rgba(228,0,43,.25);
 }
 
-.btn-outline {
-    border: 1px solid var(--border);
-    background: rgba(255,255,255,.025);
+.btn-outline{
+    border:1px solid var(--border);
+    background:rgba(255,255,255,.025);
 }
 
-.btn-outline:hover {
-    border-color: rgba(228,0,43,.5);
-    background: rgba(228,0,43,.08);
-    transform: translateY(-3px);
+.btn-outline:hover{
+    border-color:rgba(228,0,43,.5);
+    background:rgba(228,0,43,.08);
+    transform:translateY(-3px);
 }
 
-/* =========================================================
-   PROFILE
-========================================================= */
+/* ================= PROFILE ================= */
 
-.profile {
-    display: flex;
-    justify-content: center;
-    position: relative;
+.profile{
+    display:flex;
+    justify-content:center;
+    position:relative;
 }
-
-.profile-glow {
-    position: absolute;
-
-    width: 380px;
-    height: 380px;
 
-    border-radius: 50%;
-
-    background: var(--red);
-    filter: blur(100px);
-
-    opacity: .17;
+.profile-glow{
+    position:absolute;
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    background:var(--red);
+    filter:blur(100px);
+    opacity:.17;
 }
-
-.profile-ring {
-    position: relative;
-    z-index: 2;
 
-    width: 390px;
-    height: 390px;
-
-    padding: 8px;
-
-    border-radius: 50%;
-
-    background:
-        linear-gradient(
-            140deg,
-            var(--red),
-            transparent 48%,
-            #37000c
-        );
+.profile-ring{
+    width:390px;
+    height:390px;
+    padding:8px;
+    border-radius:50%;
+    background:linear-gradient(
+        140deg,
+        var(--red),
+        transparent 48%,
+        #35000b
+    );
+    position:relative;
+    z-index:2;
 }
-
-.profile-image {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    border-radius: 50%;
 
-    background: #151518;
-
-    border: 8px solid var(--black);
+.profile-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+    background:#151518;
+    border:8px solid var(--black);
 }
-
-.profile-card {
-    position: absolute;
-    z-index: 5;
-
-    bottom: 5px;
-    left: 10px;
-
-    padding: 17px 20px;
-
-    border-radius: 18px;
-
-    background: rgba(17,17,19,.9);
 
-    backdrop-filter: blur(15px);
+/* PHOTO BADGE */
 
-    border: 1px solid var(--border);
-
-    box-shadow: 0 20px 50px rgba(0,0,0,.45);
+.profile-card{
+    position:absolute;
+    z-index:5;
+    bottom:5px;
+    left:5px;
+    padding:17px 20px;
+    border-radius:18px;
+    background:rgba(17,17,19,.93);
+    backdrop-filter:blur(15px);
+    border:1px solid var(--border);
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
 }
-
-.profile-card strong {
-    display: block;
-
-    color: var(--red);
 
-    font-family: "Space Grotesk";
-    font-size: 25px;
+.profile-card strong{
+    display:block;
+    color:var(--red);
+    font-family:"Space Grotesk";
+    font-size:25px;
 }
 
-.profile-card small {
-    color: #aaa;
-    font-size: 11px;
+.profile-card small{
+    color:#aaa;
+    font-size:11px;
 }
 
-/* =========================================================
-   STATS
-========================================================= */
+/* ================= STATS ================= */
 
-.stats {
-    padding-top: 20px;
-    padding-bottom: 100px;
+.stats{
+    padding-top:20px;
+    padding-bottom:100px;
 }
 
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
 }
 
-.stat {
-    padding: 32px 25px;
-    border-right: 1px solid var(--border);
+.stat{
+    padding:32px 25px;
+    border-right:1px solid var(--border);
 }
 
-.stat:last-child {
-    border-right: none;
+.stat:last-child{
+    border-right:none;
 }
 
-.stat-number {
-    font-family: "Space Grotesk";
-    font-size: 43px;
-    font-weight: 700;
+.stat-number{
+    font-family:"Space Grotesk";
+    font-size:43px;
+    font-weight:700;
 }
 
-.stat-number span {
-    color: var(--red);
+.stat-number span{
+    color:var(--red);
 }
 
-.stat p {
-    color: var(--muted);
-    font-size: 12px;
-    margin-top: 5px;
+.stat p{
+    color:var(--muted);
+    font-size:12px;
+    margin-top:5px;
 }
 
-/* =========================================================
-   ABOUT
-========================================================= */
+/* ================= ABOUT ================= */
 
-.about {
-    background: #080809;
+.about{
+    background:#080809;
 }
-
-.about-grid {
-    display: grid;
-    grid-template-columns: .8fr 1.2fr;
-
-    gap: 80px;
 
-    margin-top: 55px;
+.about-grid{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:80px;
+    margin-top:55px;
 }
 
-.about-big {
-    font-family: "Space Grotesk";
-
-    font-size: 40px;
-    line-height: 1.15;
-
-    letter-spacing: -1.5px;
+.about-big{
+    font-family:"Space Grotesk";
+    font-size:40px;
+    line-height:1.15;
+    letter-spacing:-1.5px;
 }
 
-.about-big span {
-    color: var(--red);
+.about-big span{
+    color:var(--red);
 }
-
-.about-text p {
-    color: var(--muted);
 
-    font-size: 15px;
-    line-height: 1.9;
-
-    margin-bottom: 18px;
+.about-text p{
+    color:var(--muted);
+    font-size:15px;
+    line-height:1.9;
+    margin-bottom:18px;
 }
-
-.about-points {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    gap: 12px;
 
-    margin-top: 28px;
+.about-points{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:28px;
 }
 
-.about-point {
-    background: var(--card);
-
-    border: 1px solid var(--border);
-
-    border-radius: 16px;
-
-    padding: 18px;
+.about-point{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:18px;
 }
 
-.about-point strong {
-    display: block;
-
-    font-size: 14px;
-
-    margin-bottom: 5px;
+.about-point strong{
+    display:block;
+    font-size:14px;
+    margin-bottom:5px;
 }
 
-.about-point span {
-    color: var(--muted);
-    font-size: 11px;
+.about-point span{
+    color:var(--muted);
+    font-size:11px;
 }
-
-/* =========================================================
-   EXPERIENCE
-========================================================= */
 
-.experience-list {
-    margin-top: 55px;
+/* ================= EXPERIENCE ================= */
 
-    display: grid;
-    gap: 16px;
+.experience-list{
+    margin-top:55px;
+    display:grid;
+    gap:16px;
 }
-
-.experience-card {
-    display: grid;
-
-    grid-template-columns: 190px 1fr;
-
-    gap: 40px;
-
-    padding: 34px;
-
-    background: var(--card);
-
-    border: 1px solid var(--border);
 
-    border-radius: 23px;
-
-    transition: .3s;
+.experience-card{
+    display:grid;
+    grid-template-columns:190px 1fr;
+    gap:40px;
+    padding:34px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:23px;
+    transition:.3s;
 }
-
-.experience-card:hover {
-    transform: translateX(5px);
-
-    border-color: rgba(228,0,43,.38);
 
-    background: #131316;
+.experience-card:hover{
+    transform:translateX(5px);
+    border-color:rgba(228,0,43,.38);
+    background:var(--card-hover);
 }
 
-.experience-date {
-    color: var(--red);
-
-    font-size: 12px;
-    font-weight: 700;
-
-    padding-top: 5px;
+.experience-date{
+    color:var(--red);
+    font-size:12px;
+    font-weight:700;
+    padding-top:5px;
 }
-
-.experience-card h3 {
-    font-family: "Space Grotesk";
 
-    font-size: 24px;
-
-    margin-bottom: 4px;
+.experience-card h3{
+    font-family:"Space Grotesk";
+    font-size:24px;
+    margin-bottom:4px;
 }
-
-.company {
-    color: #aaa;
-
-    font-size: 13px;
 
-    margin-bottom: 18px;
+.company{
+    color:#aaa;
+    font-size:13px;
+    margin-bottom:18px;
 }
 
-.experience-card p {
-    color: var(--muted);
-
-    font-size: 13px;
-
-    line-height: 1.8;
+.experience-card p{
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.8;
 }
 
-/* =========================================================
-   BUSINESS EXPOSURE
-========================================================= */
+/* ================= EXPOSURE ================= */
 
-.exposure {
-    background: #080809;
+.exposure{
+    background:#080809;
 }
-
-.exposure-grid {
-    margin-top: 55px;
-
-    display: grid;
 
-    grid-template-columns: repeat(3,1fr);
-
-    gap: 16px;
+.exposure-grid{
+    margin-top:55px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
 }
-
-.exposure-card {
-    min-height: 230px;
-
-    padding: 30px;
-
-    background: var(--card);
-
-    border: 1px solid var(--border);
-
-    border-radius: 22px;
 
-    transition: .3s;
+.exposure-card{
+    min-height:230px;
+    padding:30px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:22px;
+    transition:.3s;
 }
 
-.exposure-card:hover {
-    transform: translateY(-6px);
-
-    border-color: rgba(228,0,43,.4);
+.exposure-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(228,0,43,.4);
 }
-
-.exposure-number {
-    color: var(--red);
-
-    font-family: "Space Grotesk";
 
-    font-size: 13px;
-
-    margin-bottom: 50px;
+.exposure-number{
+    color:var(--red);
+    font-family:"Space Grotesk";
+    font-size:13px;
+    margin-bottom:50px;
 }
-
-.exposure-card h3 {
-    font-family: "Space Grotesk";
-
-    font-size: 23px;
 
-    margin-bottom: 12px;
+.exposure-card h3{
+    font-family:"Space Grotesk";
+    font-size:23px;
+    margin-bottom:12px;
 }
 
-.exposure-card p {
-    color: var(--muted);
-
-    font-size: 12px;
-
-    line-height: 1.7;
+.exposure-card p{
+    color:var(--muted);
+    font-size:12px;
+    line-height:1.7;
 }
-
-/* =========================================================
-   SKILLS
-========================================================= */
 
-.skills-grid {
-    margin-top: 55px;
+/* ================= SKILLS ================= */
 
-    display: grid;
-
-    grid-template-columns: repeat(3,1fr);
-
-    gap: 12px;
+.skills-grid{
+    margin-top:55px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
 }
-
-.skill {
-    display: flex;
 
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 21px;
-
-    background: var(--card);
-
-    border: 1px solid var(--border);
-
-    border-radius: 15px;
-
-    transition: .25s;
+.skill{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:21px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:15px;
+    transition:.25s;
 }
-
-.skill:hover {
-    background: #17171a;
 
-    border-color: rgba(228,0,43,.4);
+.skill:hover{
+    background:var(--card-hover);
+    border-color:rgba(228,0,43,.4);
 }
 
-.skill-name {
-    font-size: 13px;
-    font-weight: 600;
+.skill-name{
+    font-size:13px;
+    font-weight:600;
 }
 
-.skill-level {
-    color: var(--red);
-
-    font-size: 10px;
-    font-weight: 700;
-
-    text-transform: uppercase;
+.skill-level{
+    color:var(--red);
+    font-size:10px;
+    font-weight:700;
+    text-transform:uppercase;
 }
 
-/* =========================================================
-   PROJECTS
-========================================================= */
+/* ================= PROJECTS ================= */
 
-.projects {
-    background: #080809;
+.projects{
+    background:#080809;
 }
-
-.project-grid {
-    margin-top: 55px;
 
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 16px;
+.project-grid{
+    margin-top:55px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
 }
-
-.project {
-    min-height: 310px;
-
-    padding: 32px;
-
-    background: var(--card);
-
-    border: 1px solid var(--border);
-
-    border-radius: 23px;
-
-    position: relative;
-
-    overflow: hidden;
 
-    transition: .3s;
+.project{
+    min-height:300px;
+    padding:32px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:23px;
+    transition:.3s;
 }
 
-.project:hover {
-    transform: translateY(-6px);
-
-    border-color: rgba(228,0,43,.4);
+.project:hover{
+    transform:translateY(-6px);
+    border-color:rgba(228,0,43,.4);
 }
-
-.project::after {
-    content: "";
-
-    position: absolute;
-
-    width: 170px;
-    height: 170px;
-
-    right: -70px;
-    bottom: -80px;
-
-    border-radius: 50%;
 
-    background: var(--red);
-
-    filter: blur(80px);
-
-    opacity: .08;
+.project-top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:70px;
 }
-
-.project-top {
-    display: flex;
 
-    justify-content: space-between;
-
-    margin-bottom: 70px;
+.project-tag{
+    padding:7px 12px;
+    border-radius:20px;
+    color:#ff5471;
+    background:rgba(228,0,43,.09);
+    font-size:10px;
+    font-weight:700;
 }
-
-.project-tag {
-    padding: 7px 12px;
-
-    border-radius: 20px;
 
-    color: #ff5471;
-
-    background: rgba(228,0,43,.09);
-
-    font-size: 10px;
-    font-weight: 700;
+.project-arrow{
+    color:var(--red);
+    font-size:23px;
 }
-
-.project-arrow {
-    color: var(--red);
 
-    font-size: 23px;
+.project h3{
+    font-family:"Space Grotesk";
+    font-size:26px;
+    margin-bottom:12px;
 }
 
-.project h3 {
-    font-family: "Space Grotesk";
-
-    font-size: 26px;
-
-    margin-bottom: 12px;
+.project p{
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.75;
 }
-
-.project p {
-    color: var(--muted);
 
-    font-size: 13px;
+/* ================= EDUCATION ================= */
 
-    line-height: 1.75;
+.education-card{
+    margin-top:55px;
+    padding:32px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:23px;
 }
 
-/* =========================================================
-   EDUCATION
-========================================================= */
-
-.education-card {
-    margin-top: 55px;
-
-    padding: 32px;
-
-    background: var(--card);
-
-    border: 1px solid var(--border);
-
-    border-radius: 23px;
+.education-card h3{
+    font-family:"Space Grotesk";
+    font-size:25px;
+    margin-bottom:7px;
 }
-
-.education-card h3 {
-    font-family: "Space Grotesk";
 
-    font-size: 25px;
-
-    margin-bottom: 6px;
+.education-card p{
+    color:var(--muted);
+    font-size:13px;
+    margin-bottom:8px;
 }
 
-.education-card p {
-    color: var(--muted);
+/* ================= CONTACT ================= */
 
-    font-size: 13px;
-
-    margin-bottom: 8px;
+.contact{
+    padding-bottom:80px;
 }
-
-/* =========================================================
-   CONTACT
-========================================================= */
 
-.contact {
-    padding-bottom: 70px;
+.contact-box{
+    padding:65px;
+    border-radius:30px;
+    background:linear-gradient(
+        135deg,
+        #190006,
+        #101012 55%,
+        #180006
+    );
+    border:1px solid rgba(228,0,43,.25);
 }
-
-.contact-box {
-    position: relative;
-
-    overflow: hidden;
-
-    padding: 75px;
 
-    border-radius: 30px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #190006,
-            #101012 55%,
-            #180006
-        );
-
-    border: 1px solid rgba(228,0,43,.25);
+.contact-box h2{
+    font-family:"Space Grotesk";
+    font-size:clamp(43px,6vw,76px);
+    line-height:1;
+    letter-spacing:-3px;
+    max-width:850px;
+    margin-bottom:20px;
 }
-
-.contact-box::before {
-    content: "";
-
-    position: absolute;
-
-    width: 400px;
-    height: 400px;
-
-    right: -100px;
-    top: -220px;
 
-    border-radius: 50%;
-
-    background: var(--red);
-
-    filter: blur(150px);
-
-    opacity: .12;
+.contact-box h2 span{
+    color:var(--red);
 }
-
-.contact-box h2 {
-    position: relative;
-
-    font-family: "Space Grotesk";
-
-    font-size: clamp(43px,6vw,76px);
 
-    line-height: 1;
-
-    letter-spacing: -3px;
+.contact-box > p{
+    color:#a3a3a8;
+    max-width:600px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
 
-    max-width: 850px;
+/* CONTACT DETAILS */
 
-    margin-bottom: 22px;
+.contact-details{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin-bottom:30px;
 }
 
-.contact-box h2 span {
-    color: var(--red);
+.contact-item{
+    padding:22px;
+    background:rgba(0,0,0,.28);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:17px;
 }
-
-.contact-box p {
-    position: relative;
-
-    color: #a3a3a8;
-
-    max-width: 600px;
-
-    line-height: 1.8;
 
-    margin-bottom: 30px;
+.contact-icon{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:rgba(228,0,43,.12);
+    color:var(--red);
+    font-size:17px;
+    margin-bottom:14px;
 }
 
-.contact-buttons {
-    position: relative;
-
-    display: flex;
-
-    gap: 12px;
-
-    flex-wrap: wrap;
+.contact-item small{
+    display:block;
+    color:#777;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:5px;
 }
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-    max-width: var(--max);
-
-    margin: auto;
 
-    padding: 30px 28px 40px;
-
-    border-top: 1px solid var(--border);
-
-    display: flex;
+.contact-item strong{
+    display:block;
+    font-size:13px;
+    word-break:break-word;
+}
 
-    justify-content: space-between;
+.contact-actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
 
-    color: #666;
+/* ================= FOOTER ================= */
 
-    font-size: 11px;
+footer{
+    max-width:var(--max);
+    margin:auto;
+    padding:30px 28px 40px;
+    border-top:1px solid var(--border);
+    display:flex;
+    justify-content:space-between;
+    color:#666;
+    font-size:11px;
 }
 
-footer strong {
-    color: white;
+footer strong{
+    color:white;
 }
-
-/* =========================================================
-   REVEAL
-========================================================= */
 
-.reveal {
-    opacity: 0;
+/* ================= ANIMATION ================= */
 
-    transform: translateY(25px);
-
-    transition: .7s ease;
+.reveal{
+    opacity:0;
+    transform:translateY(25px);
+    transition:.7s ease;
 }
-
-.reveal.show {
-    opacity: 1;
 
-    transform: translateY(0);
+.reveal.show{
+    opacity:1;
+    transform:translateY(0);
 }
 
-/* =========================================================
-   MOBILE
-========================================================= */
+/* ================= MOBILE ================= */
 
-@media(max-width:900px) {
+@media(max-width:900px){
 
-    .menu {
-        display: block;
+    .menu{
+        display:block;
     }
 
-    .nav-links {
-        display: none;
-
-        position: absolute;
-
-        top: 72px;
-
-        left: 20px;
-        right: 20px;
-
-        padding: 22px;
-
-        background: #111114;
-
-        border: 1px solid var(--border);
-
-        border-radius: 18px;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 20px;
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:72px;
+        left:20px;
+        right:20px;
+        padding:22px;
+        background:#111114;
+        border:1px solid var(--border);
+        border-radius:18px;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
     }
 
-    .nav-links.active {
-        display: flex;
+    .nav-links.active{
+        display:flex;
     }
 
-    .hero-grid {
-        grid-template-columns: 1fr;
-
-        text-align: center;
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
     }
 
-    .hero-small {
-        justify-content: center;
+    .hero-small{
+        justify-content:center;
     }
 
-    .hero-description {
-        margin-left: auto;
-        margin-right: auto;
+    .hero-description{
+        margin-left:auto;
+        margin-right:auto;
     }
 
-    .hero-buttons {
-        justify-content: center;
+    .hero-buttons{
+        justify-content:center;
     }
 
-    .profile {
-        margin-top: 20px;
+    .profile{
+        margin-top:25px;
     }
 
-    .stats-grid {
-        grid-template-columns: 1fr 1fr;
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
     }
 
-    .stat:nth-child(2) {
-        border-right: none;
+    .stat:nth-child(2){
+        border-right:none;
     }
 
     .stat:nth-child(3),
-    .stat:nth-child(4) {
-        border-top: 1px solid var(--border);
+    .stat:nth-child(4){
+        border-top:1px solid var(--border);
     }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:35px;
     }
 
     .exposure-grid,
-    .skills-grid {
-        grid-template-columns: 1fr 1fr;
+    .skills-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-details{
+        grid-template-columns:1fr;
     }
 }
 
-@media(max-width:600px) {
+@media(max-width:600px){
 
-    section {
-        padding: 80px 0;
+    section{
+        padding:80px 0;
     }
 
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
+    .container{
+        padding:0 20px;
     }
 
-    .hero {
-        padding-top: 125px;
+    .hero{
+        padding-top:125px;
     }
 
-    .hero h1 {
-        font-size: 51px;
-        letter-spacing: -3px;
+    .hero h1{
+        font-size:51px;
+        letter-spacing:-3px;
     }
 
-    .hero-role {
-        font-size: 17px;
+    .hero-role{
+        font-size:17px;
     }
 
-    .hero-description {
-        font-size: 14px;
+    .hero-description{
+        font-size:14px;
     }
 
-    .profile-ring {
-        width: 290px;
-        height: 290px;
+    .profile-ring{
+        width:290px;
+        height:290px;
     }
 
-    .profile-card {
-        left: 4%;
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
     }
 
-    .stats-grid {
-        grid-template-columns: 1fr 1fr;
+    .stat{
+        padding:25px 14px;
     }
 
-    .stat {
-        padding: 25px 14px;
-    }
-
-    .stat-number {
-        font-size: 31px;
+    .stat-number{
+        font-size:31px;
     }
 
     .about-points,
     .exposure-grid,
     .skills-grid,
-    .project-grid {
-        grid-template-columns: 1fr;
+    .project-grid{
+        grid-template-columns:1fr;
     }
 
-    .experience-card {
-        grid-template-columns: 1fr;
-
-        gap: 10px;
-
-        padding: 25px;
+    .experience-card{
+        grid-template-columns:1fr;
+        gap:10px;
+        padding:25px;
     }
 
-    .project {
-        min-height: 285px;
+    .contact-box{
+        padding:40px 24px;
     }
 
-    .contact-box {
-        padding: 42px 25px;
+    .contact-box h2{
+        letter-spacing:-2px;
     }
 
-    .contact-box h2 {
-        letter-spacing: -2px;
-    }
-
-    footer {
-        flex-direction: column;
-
-        gap: 8px;
+    footer{
+        flex-direction:column;
+        gap:8px;
     }
 }
 
@@ -1182,1050 +921,774 @@ footer strong {
 
 <body>
 
-
-<!-- ======================================================
-     NAVBAR
-====================================================== -->
+<!-- ================= NAVBAR ================= -->
 
 <header class="navbar">
 
-    <div class="nav-inner">
+<div class="nav-inner">
 
-        <a href="#home" class="logo">
-            SHESHRAM PRAJAPATI<span>.</span>
-        </a>
+<a href="#home" class="logo">
+SHESHRAM<span> PRAJAPATI</span>
+</a>
 
-        <button class="menu" id="menu">
-            ☰
-        </button>
+<button class="menu" id="menu">☰</button>
 
-        <ul class="nav-links" id="navLinks">
+<ul class="nav-links" id="navLinks">
 
-            <li>
-                <a href="#about">About</a>
-            </li>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
 
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
+<li>
+<a href="resume.pdf" target="_blank" class="resume-btn">
+Resume
+</a>
+</li>
 
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
+</ul>
 
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
-            <li>
-                <a href="resume.pdf"
-                   target="_blank"
-                   class="resume-btn">
-                    Resume
-                </a>
-            </li>
-
-        </ul>
-
-    </div>
+</div>
 
 </header>
 
 
 <main>
 
-
-<!-- ======================================================
-     HERO
-====================================================== -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
-    <div class="container">
+<div class="container">
 
-        <div class="hero-grid">
+<div class="hero-grid">
 
-            <div class="reveal">
+<div class="reveal">
 
-                <div class="hero-small">
-                    MIS Executive · Data Analytics
-                </div>
+<div class="hero-small">
+MIS Executive · Data Analytics
+</div>
 
-                <h1>
-                    Turning
-                    <span>data</span>
-                    into
-                    <span>decisions.</span>
-                </h1>
+<h1>
+Turning
+<span>data</span>
+into
+<span>decisions.</span>
+</h1>
 
-                <div class="hero-role">
-                    MIS Executive | MIS Reporting | Data Analysis | WFM
-                </div>
+<div class="hero-role">
+MIS Executive | MIS Reporting | Data Analysis | WFM
+</div>
 
-                <p class="hero-description">
-                    MIS professional with 8+ years of experience in
-                    MIS reporting, data analysis, workforce management,
-                    performance tracking and business reporting across
-                    BPO and Telecom operations.
-                </p>
+<p class="hero-description">
+MIS professional with 8+ years of experience in MIS reporting,
+data analysis, workforce management, performance tracking
+and business reporting across BPO and Telecom operations.
+</p>
 
-                <div class="hero-buttons">
+<div class="hero-buttons">
 
-                    <a href="#experience"
-                       class="btn btn-red">
-                        Explore Experience →
-                    </a>
+<a href="#experience" class="btn btn-red">
+Explore Experience →
+</a>
 
-                    <a href="#contact"
-                       class="btn btn-outline">
-                        Let's Connect
-                    </a>
+<a href="#contact" class="btn btn-outline">
+Let's Connect
+</a>
 
-                </div>
+</div>
 
-            </div>
+</div>
 
 
-            <!-- PROFILE -->
+<!-- PROFILE PHOTO -->
 
-            <div class="profile reveal">
+<div class="profile reveal">
 
-                <div class="profile-glow"></div>
+<div class="profile-glow"></div>
 
-                <div class="profile-ring">
+<div class="profile-ring">
 
-                    <!--
-                    =================================================
-                    PROFILE PHOTO
+<img
+src="profile.jpg"
+class="profile-image"
+alt="Sheshram Prajapati"
+>
 
-                    Replace the URL below with your GitHub RAW image.
+</div>
 
-                    Example:
+<div class="profile-card">
 
-                    https://raw.githubusercontent.com/
-                    YOUR_USERNAME/YOUR_REPO/main/profile.jpg
+<strong>8+ Years</strong>
 
-                    =================================================
-                    -->
+<small>MIS & Reporting Experience</small>
 
-                    <img
-                        id="profileImage"
-                        class="profile-image"
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=90"
-                        alt="Sheshram Prajapati"
-                    >
+</div>
 
-                </div>
+</div>
 
-                <div class="profile-card">
+</div>
 
-                    <strong>8+ Years</strong>
-
-                    <small>
-                        MIS & Reporting Experience
-                    </small>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- ======================================================
-     STATS
-====================================================== -->
+<!-- ================= STATS ================= -->
 
 <section class="stats">
 
-    <div class="container">
+<div class="container">
 
-        <div class="stats-grid">
+<div class="stats-grid">
 
-            <div class="stat reveal">
-                <div class="stat-number">
-                    8<span>+</span>
-                </div>
+<div class="stat reveal">
+<div class="stat-number">8<span>+</span></div>
+<p>Years Experience</p>
+</div>
 
-                <p>
-                    Years Experience
-                </p>
-            </div>
+<div class="stat reveal">
+<div class="stat-number">5<span>+</span></div>
+<p>MIS Team Members</p>
+</div>
 
+<div class="stat reveal">
+<div class="stat-number">3</div>
+<p>Major Organizations</p>
+</div>
 
-            <div class="stat reveal">
-                <div class="stat-number">
-                    5<span>+</span>
-                </div>
+<div class="stat reveal">
+<div class="stat-number">3</div>
+<p>Business Domains</p>
+</div>
 
-                <p>
-                    MIS Team Members
-                </p>
-            </div>
+</div>
 
-
-            <div class="stat reveal">
-                <div class="stat-number">
-                    3
-                </div>
-
-                <p>
-                    Major Organizations
-                </p>
-            </div>
-
-
-            <div class="stat reveal">
-                <div class="stat-number">
-                    3
-                </div>
-
-                <p>
-                    Business Domains
-                </p>
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- ======================================================
-     ABOUT
-====================================================== -->
+<!-- ================= ABOUT ================= -->
 
 <section class="about" id="about">
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-label reveal">
-            About Me
-        </div>
+<div class="section-label reveal">About Me</div>
 
-        <h2 class="section-title reveal">
-            More than<br>
-            just numbers.
-        </h2>
+<h2 class="section-title reveal">
+More than<br>just numbers.
+</h2>
 
+<div class="about-grid">
 
-        <div class="about-grid">
+<div class="about-big reveal">
+I make complex
+<span>data simple.</span>
+</div>
 
-            <div class="about-big reveal">
+<div class="about-text reveal">
 
-                I make complex
-                <span>data simple.</span>
+<p>
+I am an experienced MIS professional with 8+ years of experience
+in MIS reporting, data analysis, workforce management,
+performance tracking and business reporting.
+</p>
 
-            </div>
+<p>
+I work extensively with large customer datasets, daily/weekly/monthly
+MIS, Excel dashboards, KPI reports, management reports and
+performance analysis.
+</p>
 
+<p>
+My experience covers BPO and Telecom operations including Airtel
+DTH, Broadband, Prepaid, Postpaid, Retention, CPE Recovery,
+New Acquisition, VAS and Installation processes.
+</p>
 
-            <div class="about-text reveal">
+<div class="about-points">
 
-                <p>
-                    I am an experienced MIS professional with
-                    8+ years of experience in MIS reporting,
-                    data analysis, workforce management,
-                    performance tracking and business reporting.
-                </p>
+<div class="about-point">
+<strong>MIS Reporting</strong>
+<span>Daily · Weekly · Monthly</span>
+</div>
 
-                <p>
-                    I work extensively with large customer datasets,
-                    daily/weekly/monthly MIS, Excel dashboards,
-                    KPI reports, management reports and
-                    performance analysis.
-                </p>
+<div class="about-point">
+<strong>Data Analysis</strong>
+<span>KPI · Trend · Performance</span>
+</div>
 
-                <p>
-                    My experience covers BPO and Telecom operations
-                    including Airtel DTH, Broadband, Prepaid,
-                    Postpaid, Retention, CPE Recovery,
-                    New Acquisition, VAS and Installation processes.
-                </p>
+<div class="about-point">
+<strong>Automation</strong>
+<span>Advanced Excel · VBA</span>
+</div>
 
+<div class="about-point">
+<strong>Workforce Management</strong>
+<span>WFM · Productivity · AHT</span>
+</div>
 
-                <div class="about-points">
+</div>
 
-                    <div class="about-point">
+</div>
 
-                        <strong>
-                            MIS Reporting
-                        </strong>
+</div>
 
-                        <span>
-                            Daily · Weekly · Monthly
-                        </span>
-
-                    </div>
-
-
-                    <div class="about-point">
-
-                        <strong>
-                            Data Analysis
-                        </strong>
-
-                        <span>
-                            KPI · Trend · Performance
-                        </span>
-
-                    </div>
-
-
-                    <div class="about-point">
-
-                        <strong>
-                            Automation
-                        </strong>
-
-                        <span>
-                            Advanced Excel · VBA
-                        </span>
-
-                    </div>
-
-
-                    <div class="about-point">
-
-                        <strong>
-                            Workforce Management
-                        </strong>
-
-                        <span>
-                            WFM · Productivity · AHT
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- ======================================================
-     EXPERIENCE
-====================================================== -->
+<!-- ================= EXPERIENCE ================= -->
 
 <section id="experience">
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-label reveal">
-            Career
-        </div>
+<div class="section-label reveal">Career</div>
 
-        <h2 class="section-title reveal">
-            Experience
-        </h2>
+<h2 class="section-title reveal">Experience</h2>
 
-        <p class="section-subtitle reveal">
-            8+ years of experience across MIS reporting,
-            business analytics, WFM and Telecom operations.
-        </p>
+<p class="section-subtitle reveal">
+8+ years of experience across MIS reporting,
+business analytics, WFM and Telecom operations.
+</p>
 
+<div class="experience-list">
 
-        <div class="experience-list">
+<div class="experience-card reveal">
 
+<div class="experience-date">
+NOV 2020 — PRESENT
+</div>
 
-            <!-- LEeway -->
+<div>
 
-            <div class="experience-card reveal">
+<h3>Senior MIS Executive</h3>
 
-                <div class="experience-date">
-                    NOV 2020 — PRESENT
-                </div>
+<div class="company">
+Leeway International Pvt. Ltd.
+</div>
 
-                <div>
+<p>
+Manage MIS and business reporting for multiple Airtel Telecom
+and DTH processes. Lead a team of MIS Executives and manage
+daily MIS requirements, customer datasets, dashboards,
+KPIs, WFM and operational analysis.
+</p>
 
-                    <h3>
-                        Senior MIS Executive
-                    </h3>
+</div>
 
-                    <div class="company">
-                        Leeway International Pvt. Ltd.
-                    </div>
-
-                    <p>
-                        Manage MIS and business reporting for multiple
-                        Airtel Telecom and DTH processes. Lead a team
-                        of 5 MIS Executives and manage daily MIS
-                        requirements, large customer datasets,
-                        dashboards, KPIs, WFM and operational analysis.
-                    </p>
-
-                </div>
-
-            </div>
+</div>
 
 
-            <!-- SIGMA -->
+<div class="experience-card reveal">
 
-            <div class="experience-card reveal">
+<div class="experience-date">
+AUG 2018 — NOV 2020
+</div>
 
-                <div class="experience-date">
-                    AUG 2018 — NOV 2020
-                </div>
+<div>
 
-                <div>
+<h3>MIS Executive / Field Coordinator</h3>
 
-                    <h3>
-                        MIS Executive / Field Coordinator
-                    </h3>
+<div class="company">
+Sigma Outsourcing Pvt. Ltd.
+</div>
 
-                    <div class="company">
-                        Sigma Outsourcing Pvt. Ltd.
-                    </div>
+<p>
+Managed MIS and field operations for Airtel Broadband
+Installation in Delhi NCR, including lead tracking,
+installation, closure, productivity reporting and coordination
+with field and technical teams.
+</p>
 
-                    <p>
-                        Managed MIS and field operations for Airtel
-                        Broadband Installation in Delhi NCR,
-                        including lead tracking, installation,
-                        closure, productivity reporting and
-                        coordination with field and technical teams.
-                    </p>
+</div>
 
-                </div>
-
-            </div>
+</div>
 
 
-            <!-- LEEWAY BPO -->
+<div class="experience-card reveal">
 
-            <div class="experience-card reveal">
+<div class="experience-date">
+AUG 2017 — AUG 2018
+</div>
 
-                <div class="experience-date">
-                    AUG 2017 — AUG 2018
-                </div>
+<div>
 
-                <div>
+<h3>MIS Executive</h3>
 
-                    <h3>
-                        MIS Executive
-                    </h3>
+<div class="company">
+Leeway BPO
+</div>
 
-                    <div class="company">
-                        Leeway BPO
-                    </div>
+<p>
+Managed MIS reporting for Airtel Broadband lead generation
+operations across India. Prepared daily, weekly and monthly
+reports, monitored campaign KPIs and supported operations
+teams with performance tracking.
+</p>
 
-                    <p>
-                        Managed MIS reporting for Airtel Broadband
-                        lead generation operations across India.
-                        Prepared daily, weekly and monthly reports,
-                        monitored campaign KPIs and supported
-                        operations teams with performance tracking.
-                    </p>
+</div>
 
-                </div>
+</div>
 
-            </div>
+</div>
 
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- ======================================================
-     BUSINESS EXPOSURE
-====================================================== -->
+<!-- ================= BUSINESS EXPOSURE ================= -->
 
 <section class="exposure">
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-label reveal">
-            Business Exposure
-        </div>
+<div class="section-label reveal">
+Business Exposure
+</div>
 
-        <h2 class="section-title reveal">
-            Domains I know.
-        </h2>
+<h2 class="section-title reveal">
+Domains I know.
+</h2>
 
+<div class="exposure-grid">
 
-        <div class="exposure-grid">
+<div class="exposure-card reveal">
 
+<div class="exposure-number">01</div>
 
-            <div class="exposure-card reveal">
+<h3>Airtel DTH</h3>
 
-                <div class="exposure-number">
-                    01
-                </div>
+<p>
+DTH Retention · CPE Recovery · New Acquisition · VAS
+</p>
 
-                <h3>
-                    Airtel DTH
-                </h3>
-
-                <p>
-                    DTH Retention · CPE Recovery ·
-                    New Acquisition · VAS
-                </p>
-
-            </div>
+</div>
 
 
-            <div class="exposure-card reveal">
+<div class="exposure-card reveal">
 
-                <div class="exposure-number">
-                    02
-                </div>
+<div class="exposure-number">02</div>
 
-                <h3>
-                    Airtel Telecom
-                </h3>
+<h3>Airtel Telecom</h3>
 
-                <p>
-                    Postpaid New Acquisition ·
-                    Prepaid New Acquisition
-                </p>
+<p>
+Postpaid New Acquisition · Prepaid New Acquisition
+</p>
 
-            </div>
+</div>
 
 
-            <div class="exposure-card reveal">
+<div class="exposure-card reveal">
 
-                <div class="exposure-number">
-                    03
-                </div>
+<div class="exposure-number">03</div>
 
-                <h3>
-                    Airtel Broadband
-                </h3>
+<h3>Airtel Broadband</h3>
 
-                <p>
-                    Pan India Lead Generation · Delhi NCR
-                    Installation · Lead-to-Installation Tracking
-                    · Field Operations · Technical Coordination
-                </p>
+<p>
+Pan India Lead Generation · Delhi NCR Installation ·
+Lead-to-Installation Tracking · Field Operations
+</p>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 
-<!-- ======================================================
-     SKILLS
-====================================================== -->
+<!-- ================= SKILLS ================= -->
 
 <section id="skills">
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-label reveal">
-            Toolkit
-        </div>
+<div class="section-label reveal">
+Toolkit
+</div>
 
-        <h2 class="section-title reveal">
-            Skills & Tools
-        </h2>
+<h2 class="section-title reveal">
+Skills & Tools
+</h2>
 
-        <p class="section-subtitle reveal">
-            Tools and capabilities used for reporting,
-            analysis, automation and business performance tracking.
-        </p>
+<p class="section-subtitle reveal">
+Tools and capabilities used for reporting, analysis,
+automation and business performance tracking.
+</p>
 
+<div class="skills-grid">
 
-        <div class="skills-grid">
+<div class="skill reveal">
+<span class="skill-name">Advanced Excel</span>
+<span class="skill-level">Advanced</span>
+</div>
 
+<div class="skill reveal">
+<span class="skill-name">Pivot Tables / Charts</span>
+<span class="skill-level">Advanced</span>
+</div>
 
-            <div class="skill reveal">
-                <span class="skill-name">
-                    Advanced Excel
-                </span>
+<div class="skill reveal">
+<span class="skill-name">XLOOKUP / VLOOKUP</span>
+<span class="skill-level">Advanced</span>
+</div>
 
-                <span class="skill-level">
-                    Advanced
-                </span>
-            </div>
+<div class="skill reveal">
+<span class="skill-name">INDEX-MATCH</span>
+<span class="skill-level">Advanced</span>
+</div>
 
+<div class="skill reveal">
+<span class="skill-name">Power Query</span>
+<span class="skill-level">Advanced</span>
+</div>
 
-            <div class="skill reveal">
-                <span class="skill-name">
-                    Pivot Tables / Charts
-                </span>
+<div class="skill reveal">
+<span class="skill-name">Excel Dashboards</span>
+<span class="skill-level">Advanced</span>
+</div>
 
-                <span class="skill-level">
-                    Advanced
-                </span>
-            </div>
+<div class="skill reveal">
+<span class="skill-name">Basic SQL</span>
+<span class="skill-level">Working</span>
+</div>
 
+<div class="skill reveal">
+<span class="skill-name">Power BI</span>
+<span class="skill-level">Learning</span>
+</div>
 
-            <div class="skill reveal">
-                <span class="skill-name">
-                    XLOOKUP / VLOOKUP
-                </span>
+<div class="skill reveal">
+<span class="skill-name">Python / Pandas</span>
+<span class="skill-level">Learning</span>
+</div>
 
-                <span class="skill-level">
-                    Advanced
-                </span>
-            </div>
+<div class="skill reveal">
+<span class="skill-name">WFM Reporting</span>
+<span class="skill-level">Advanced</span>
+</div>
 
+<div class="skill reveal">
+<span class="skill-name">KPI Analysis</span>
+<span class="skill-level">Advanced</span>
+</div>
 
-            <div class="skill reveal">
-                <span class="skill-name">
-                    INDEX-MATCH
-                </span>
+<div class="skill reveal">
+<span class="skill-name">Root Cause Analysis</span>
+<span class="skill-level">Advanced</span>
+</div>
 
-                <span class="skill-level">
-                    Advanced
-                </span>
-            </div>
+</div>
 
-
-            <div class="skill reveal">
-                <span class="skill-name">
-                    Power Query
-                </span>
-
-                <span class="skill-level">
-                    Advanced
-                </span>
-            </div>
-
-
-            <div class="skill reveal">
-                <span class="skill-name">
-                    Excel Dashboards
-                </span>
-
-                <span class="skill-level">
-                    Advanced
-                </span>
-            </div>
-
-
-            <div class="skill reveal">
-                <span class="skill-name">
-                    Basic SQL
-                </span>
-
-                <span class="skill-level">
-                    Working
-                </span>
-            </div>
-
-
-            <div class="skill reveal">
-                <span class="skill-name">
-                    Power BI
-                </span>
-
-                <span class="skill-level">
-                    Learning
-                </span>
-            </div>
-
-
-            <div class="skill reveal">
-                <span class="skill-name">
-                    Python / Pandas
-                </span>
-
-                <span class="skill-level">
-                    Learning
-                </span>
-            </div>
-
-
-            <div class="skill reveal">
-                <span class="skill-name">
-                    WFM Reporting
-                </span>
-
-                <span class="skill-level">
-                    Advanced
-                </span>
-            </div>
-
-
-            <div class="skill reveal">
-                <span class="skill-name">
-                    KPI Analysis
-                </span>
-
-                <span class="skill-level">
-                    Advanced
-                </span>
-            </div>
-
-
-            <div class="skill reveal">
-                <span class="skill-name">
-                    Root Cause Analysis
-                </span>
-
-                <span class="skill-level">
-                    Advanced
-                </span>
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- ======================================================
-     PROJECTS
-====================================================== -->
+<!-- ================= PROJECTS ================= -->
 
 <section class="projects" id="projects">
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-label reveal">
-            Selected Work
-        </div>
+<div class="section-label reveal">
+Selected Work
+</div>
 
-        <h2 class="section-title reveal">
-            What I build.
-        </h2>
+<h2 class="section-title reveal">
+What I build.
+</h2>
 
+<div class="project-grid">
 
-        <div class="project-grid">
+<div class="project reveal">
 
+<div class="project-top">
+<span class="project-tag">EXCEL</span>
+<span class="project-arrow">↗</span>
+</div>
 
-            <div class="project reveal">
+<h3>MIS Performance Dashboard</h3>
 
-                <div class="project-top">
+<p>
+Excel-based dashboards for sales, revenue, productivity,
+WFM, KPIs and operational performance tracking.
+</p>
 
-                    <span class="project-tag">
-                        EXCEL
-                    </span>
-
-                    <span class="project-arrow">
-                        ↗
-                    </span>
-
-                </div>
-
-                <h3>
-                    MIS Performance Dashboard
-                </h3>
-
-                <p>
-                    Excel-based dashboards for sales, revenue,
-                    productivity, WFM, KPIs and operational
-                    performance tracking.
-                </p>
-
-            </div>
+</div>
 
 
-            <div class="project reveal">
+<div class="project reveal">
 
-                <div class="project-top">
+<div class="project-top">
+<span class="project-tag">WFM</span>
+<span class="project-arrow">↗</span>
+</div>
 
-                    <span class="project-tag">
-                        WFM
-                    </span>
+<h3>Workforce Performance Reporting</h3>
 
-                    <span class="project-arrow">
-                        ↗
-                    </span>
+<p>
+Reporting around attendance, login hours, AHT, productivity,
+occupancy, utilization, calls handled and target achievement.
+</p>
 
-                </div>
-
-                <h3>
-                    Workforce Performance Reporting
-                </h3>
-
-                <p>
-                    Reporting around attendance, login hours,
-                    AHT, productivity, occupancy, utilization,
-                    calls handled and target achievement.
-                </p>
-
-            </div>
+</div>
 
 
-            <div class="project reveal">
+<div class="project reveal">
 
-                <div class="project-top">
+<div class="project-top">
+<span class="project-tag">ANALYTICS</span>
+<span class="project-arrow">↗</span>
+</div>
 
-                    <span class="project-tag">
-                        ANALYTICS
-                    </span>
+<h3>KPI & Revenue Analysis</h3>
 
-                    <span class="project-arrow">
-                        ↗
-                    </span>
+<p>
+Analysis of leads, attempts, connects, conversions,
+sales, retention, recovery, revenue and achievement.
+</p>
 
-                </div>
-
-                <h3>
-                    KPI & Revenue Analysis
-                </h3>
-
-                <p>
-                    Analysis of leads, attempts, connects,
-                    conversions, sales, retention, recovery,
-                    revenue and achievement.
-                </p>
-
-            </div>
+</div>
 
 
-            <div class="project reveal">
+<div class="project reveal">
 
-                <div class="project-top">
+<div class="project-top">
+<span class="project-tag">AUTOMATION</span>
+<span class="project-arrow">↗</span>
+</div>
 
-                    <span class="project-tag">
-                        AUTOMATION
-                    </span>
+<h3>Automated MIS Reporting</h3>
 
-                    <span class="project-arrow">
-                        ↗
-                    </span>
+<p>
+Recurring reporting workflows using Advanced Excel and
+reporting techniques to reduce manual effort and improve accuracy.
+</p>
 
-                </div>
+</div>
 
-                <h3>
-                    Automated MIS Reporting
-                </h3>
+</div>
 
-                <p>
-                    Recurring reporting workflows using
-                    Advanced Excel and reporting techniques
-                    to reduce manual effort and improve accuracy.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- ======================================================
-     EDUCATION
-====================================================== -->
+<!-- ================= EDUCATION ================= -->
 
 <section>
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-label reveal">
-            Education
-        </div>
+<div class="section-label reveal">
+Education
+</div>
 
-        <h2 class="section-title reveal">
-            Education
-        </h2>
+<h2 class="section-title reveal">
+Education
+</h2>
 
+<div class="education-card reveal">
 
-        <div class="education-card reveal">
+<h3>Bachelor of Arts (B.A.)</h3>
 
-            <h3>
-                Bachelor of Arts (B.A.)
-            </h3>
+<p>
+Dr. Ram Manohar Lohia Avadh University, Ayodhya
+</p>
 
-            <p>
-                Dr. Ram Manohar Lohia Avadh University, Ayodhya
-            </p>
+<p>2022</p>
 
-            <p>
-                2022
-            </p>
+<br>
 
-            <br>
+<p>12th — UP Board · 2017</p>
 
-            <p>
-                12th — UP Board · 2017
-            </p>
+<p>10th — UP Board · 2015</p>
 
-            <p>
-                10th — UP Board · 2015
-            </p>
+</div>
 
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- ======================================================
-     CONTACT
-====================================================== -->
+<!-- ================= CONTACT ================= -->
 
 <section class="contact" id="contact">
 
-    <div class="container">
+<div class="container">
 
-        <div class="contact-box reveal">
+<div class="contact-box reveal">
 
-            <h2>
-                Let's create something
-                <span>meaningful.</span>
-            </h2>
+<div class="section-label">
+CONTACT
+</div>
 
-            <p>
-                Open to MIS, Reporting, Data Analytics,
-                WFM and related opportunities in Delhi NCR.
-            </p>
+<h2>
+Let's connect for the
+<span>next opportunity.</span>
+</h2>
 
-
-            <div class="contact-buttons">
-
-                <a
-                    href="mailto:srp8046@gmail.com"
-                    class="btn btn-red"
-                >
-                    Email Me →
-                </a>
+<p>
+Open to MIS, Reporting, Data Analytics, WFM and related
+opportunities in Delhi NCR.
+</p>
 
 
-                <a
-                    href="https://www.linkedin.com/in/Sheshram-prajapati"
-                    target="_blank"
-                    class="btn btn-outline"
-                >
-                    LinkedIn
-                </a>
+<!-- CONTACT DETAILS -->
+
+<div class="contact-details">
 
 
-                <!-- Replace with your GitHub -->
+<!-- EMAIL -->
 
-                <a
-                    href="https://github.com/"
-                    target="_blank"
-                    class="btn btn-outline"
-                >
-                    GitHub
-                </a>
+<div class="contact-item">
 
-            </div>
+<div class="contact-icon">✉</div>
 
-        </div>
+<small>Email</small>
 
-    </div>
+<strong>
+srp8046@gmail.com
+</strong>
+
+</div>
+
+
+<!-- PHONE -->
+
+<div class="contact-item">
+
+<div class="contact-icon">☎</div>
+
+<small>Phone</small>
+
+<strong>
++91 9792561744
+</strong>
+
+</div>
+
+
+<!-- LOCATION -->
+
+<div class="contact-item">
+
+<div class="contact-icon">⌖</div>
+
+<small>Location</small>
+
+<strong>
+Delhi NCR, India
+</strong>
+
+</div>
+
+</div>
+
+
+<!-- CONTACT BUTTONS -->
+
+<div class="contact-actions">
+
+<a
+href="mailto:srp8046@gmail.com"
+class="btn btn-red">
+✉ Email Me
+</a>
+
+<a
+href="tel:+919792561744"
+class="btn btn-outline">
+☎ Call Me
+</a>
+
+<a
+href="https://www.linkedin.com/in/Sheshram-prajapati"
+target="_blank"
+class="btn btn-outline">
+in LinkedIn
+</a>
+
+<a
+href="https://github.com/"
+target="_blank"
+class="btn btn-outline">
+GitHub ↗
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 </main>
 
 
-<!-- ======================================================
-     FOOTER
-====================================================== -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <div>
-        © 2026 <strong>Sheshram Prajapati</strong>
-    </div>
+<div>
+© 2026 <strong>Sheshram Prajapati</strong>
+</div>
 
-    <div>
-        MIS · Data Analytics · Reporting · WFM
-    </div>
+<div>
+MIS · Data Analytics · Reporting · WFM
+</div>
 
 </footer>
 
 
-<!-- ======================================================
-     JAVASCRIPT
-====================================================== -->
-
 <script>
 
-/* ==========================================
-   MOBILE MENU
-========================================== */
+/* MOBILE MENU */
 
 const menu = document.getElementById("menu");
 const navLinks = document.getElementById("navLinks");
 
-menu.addEventListener("click", () => {
-
+menu.addEventListener("click",()=>{
     navLinks.classList.toggle("active");
-
 });
 
-
-document.querySelectorAll(".nav-links a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
+document.querySelectorAll(".nav-links a").forEach(link=>{
+    link.addEventListener("click",()=>{
         navLinks.classList.remove("active");
-
     });
-
 });
 
 
-/* ==========================================
-   SCROLL ANIMATION
-========================================== */
+/* SCROLL ANIMATION */
 
 const observer = new IntersectionObserver(
-    (entries) => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add("show");
-
-            }
-
-        });
-
-    },
-    {
-        threshold: 0.12
-    }
-);
-
-
-document.querySelectorAll(".reveal").forEach(element => {
-
-    observer.observe(element);
-
+(entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},
+{
+    threshold:.12
 });
 
-
-/* ==========================================
-   PROFILE IMAGE
-==========================================
-
-   CHANGE ONLY THIS URL.
-
-   GitHub RAW example:
-
-   https://raw.githubusercontent.com/
-   USERNAME/REPOSITORY/main/profile.jpg
-
-========================================== */
-
-const PROFILE_IMAGE =
-"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=90";
-
-
-document.getElementById("profileImage").src = PROFILE_IMAGE;
+document.querySelectorAll(".reveal").forEach(el=>{
+    observer.observe(el);
+});
 
 </script>
 
 </body>
 </html>
+```
